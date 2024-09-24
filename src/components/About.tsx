@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-
 import SectionHeading from "./Section-heading";
 
 export const About = () => {

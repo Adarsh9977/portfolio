@@ -4,10 +4,25 @@ import { motion } from "framer-motion";
 
 import { FaPaperPlane } from "react-icons/fa";
 import SectionHeading from "./Section-heading";
+import { useSectionInView } from "@/lib/hooks";
 
 export const Contact = () => {
+    
+    const { ref } = useSectionInView("Contact");
+
     return (
-        <section id="contact">
+        <motion.section 
+            initial={{ opacity: 0 }}
+            whileInView={{
+                opacity: 1
+            }}
+            transition={{
+                duration: 1
+            }}
+            viewport={{ once: true }}
+            ref={ref} 
+            id="contact"
+        >
             <div className="container">
                 <SectionHeading>Contact Me</SectionHeading>
                 <div>
@@ -48,6 +63,6 @@ export const Contact = () => {
                     </form>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }

@@ -23,11 +23,7 @@ export const Header = () => {
                             {navLinks.map((link)=> (
                                 <motion.li 
                                 key={link.hash}
-                                className={clsx("font-medium px-2 py-1 rounded-full text-white hover:text-white/60 transition",
-                                    {
-                                        "bg-white/10": activeSection === link.name
-                                    }
-                                )}
+                                className="flex items-center justify-center relative"
                                 initial={{opacity: 0, y: -100 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 >
@@ -36,9 +32,25 @@ export const Header = () => {
                                         onClick={() => {
                                             setActiveSection(link.name)
                                             setLastClickTime(Date.now())
-                                          }}
+                                        }}
+                                        className={clsx("font-medium px-2 py-1 rounded-full text-white hover:text-white/60 transition",
+                                            {
+                                                "bg-white/10": activeSection === link.name
+                                            }
+                                        )}
                                     >
                                     {link.name}
+                                    {link.name === activeSection && (
+                                        <motion.span
+                                        layoutId="activeSection"
+                                        transition={{
+                                          type: "spring",
+                                          stiffness: 380,
+                                          damping: 30,
+                                        }}
+                                        className=" bg-opacity-10 rounded-full absolute inset-0 -z-10 "
+                                      ></motion.span>
+                                    )}
                                     </Link>
                                 </motion.li>
                             ))}
