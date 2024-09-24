@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useSectionInView } from "@/lib/hooks";
@@ -54,20 +55,21 @@ export const Intro = () => {
 
                     <div className="bg-gradient-to-r from-[#fbb0b2] to-[#9f92ff] p-0.5 rounded-full hover:scale-105 ease-linear cursor-pointer z-20">
                         <a
-                        href="AdarshTiwariResume.pdf"
-                        download 
-                        className="flex relative items-center justify-center gap-2 cursor-pointer p-2 z-30 bg-clip-content rounded-full text-black font-semibold">
+                        className="flex relative items-center justify-center gap-2 cursor-pointer p-2 z-30 bg-clip-content rounded-full text-black font-semibold"
+                        href="https://drive.google.com/file/d/1EApMe2WLeSshXbE0SIZDeU_uP33d3YyX/view?usp=drive_link"
+                        target="blank"
+                        >
                             Download CV <MdOutlineFileDownload size={25}/>
                         </a>
                     </div>
                     <a
-                    href="https://www.linkedin.com/in/adarsh-tiwari-b9a64a19a" 
+                    href="https://github.com/Adarsh9977" 
                     target="_blank"
                     className="bg-white rounded-full z-20 p-2 hover:bg-white/70 cursor-pointer">
                         <FaGithubSquare size={30}/>
                     </a>
                     <a
-                    href="https://github.com/Adarsh9977" 
+                    href="https://www.linkedin.com/in/adarsh-tiwari-b9a64a19a" 
                     target="_blank"
                     className="bg-white rounded-full p-2 z-20 hover:bg-white/70 cursor-pointer">
                         <FaLinkedin size={30}/>
