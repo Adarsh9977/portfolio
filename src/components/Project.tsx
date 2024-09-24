@@ -1,8 +1,6 @@
 "use client";
 
 import { projectsList } from "@/lib/data";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Image from "next/image";
 
@@ -19,7 +17,7 @@ export const Project = ({
 
 
     return(
-        <div className="text-white z-30">
+        <div className="text-white z-20">
             <CardContainer className="inter-var relative bg-gray-700 bg-opacity-50 rounded-3xl max-w-[50rem] overflow-hidden sm:pr-8 sm:h-[24rem] hover:bg-opacity-60 transition group-even:pl-8 z-30 py-20 px-10">
                 <CardBody className="relative group/card w-auto h-auto rounded-xl mt-4 p-6">
                     <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]">
@@ -40,7 +38,7 @@ export const Project = ({
                             src={imageUrl}
                             alt="my project"
                             quality={100}
-                            className="absolute top-12 rounded-2xl -right-28 w-[28.25rem] h-[18rem] rounded-t-lg shadow-2xl transition group-even:right-[initial] group-even:-left-40"
+                            className="absolute top-12 rounded-2xl -right-28 w-[28.25rem] h-[18rem] rounded-t-lg shadow-2xl transition group-even:right-[initial] group-even:-left-40 z-20"
                         />
                     </a>
                 </CardBody>
