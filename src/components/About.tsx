@@ -29,13 +29,13 @@ export const About = () => {
                             <span className="font-medium">
                             full-stack web development and problem solving.
                             </span>
-                            My tech stack is 
+                            My tech stack is {" "}
                             <span className="font-medium">
                             C++, JavaScript, React, Next.js, Node.js, and MongoDB
                             </span>
                             . I am also familiar with postgreSQL, TypeScript and Prisma. I
                             am always looking to learn new technologies. I am currently looking for
-                            a <span className="font-medium">full-time position</span> as a software
+                            a <span className="font-medium">full-time position/intern</span> as a software
                             developer/engineer.
                         </p>
                     </div>
