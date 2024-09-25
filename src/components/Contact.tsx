@@ -26,7 +26,7 @@ export const Contact = () => {
             <div className="container">
                 <SectionHeading>Contact Me</SectionHeading>
                 <div>
-                    <p className="text-white -mt-4 text-center">
+                    <p className="text-white -mt-4 text-center p-5">
                         Please contact me directly at{" "}
                         <a className="underline text-muted-foreground" href="mailto:adarshtiwari797023@gmail.com">
                             adarshtiwari797023@gmail.com
@@ -45,7 +45,7 @@ export const Contact = () => {
                             maxLength={500}
                         />
                         <textarea
-                            className="h-52 w-full my-3 rounded-lg border bg-gray-600 bg-opacity-50 p-4 text-white"
+                            className="h-40 sm:h-56 w-full my-3 rounded-lg border bg-gray-600 bg-opacity-50 p-4 text-white"
                             placeholder="Your message"
                             name="message"
                             required
@@ -53,7 +53,7 @@ export const Contact = () => {
                         />
                         <button
                             type="submit"
-                            className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-white  text-black rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-300 active:scale-105"
+                            className="group flex text-sm sm:text-lg items-center justify-center gap-2 h-[2rem] sm:h-[3rem] w-[6rem] sm:w-[8rem] bg-white text-black rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-300 active:scale-105"
                         >
                         Submit{" "}
                         <div className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" >

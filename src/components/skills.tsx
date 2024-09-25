@@ -26,12 +26,12 @@ export const Skills = () => {
                 <SectionHeading>
                     Skills
                 </SectionHeading>
-                <div className="relative flex items-center justify-center mb-5 z-20 scroll-mt-28 text-center px-4 py-10 sm:mb:40">
-                    <ul className="flex flex-wrap justify-center gap-4 text-lg max-w-[53rem] text-gray-100">
+                <div className="relative flex items-center justify-center mb-10 z-20 scroll-mt-28 text-center px-4 py-3 sm:py-7 md:py-10 sm:mb:40">
+                    <ul className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 text-lg max-w-[53rem] text-gray-100">
                         {skills.map((skill, index)=>(
                             <motion.li 
                                 key={index} 
-                                className="bg-gray-800 bg-opacity-70 rounded-xl px-5 py-3 hover:bg-opacity-100 transition-colors duration-200 cursor-default"
+                                className="bg-gray-800 bg-opacity-70 text-sm sm:text-base md:text-lg rounded-xl px-3 sm:px-5 py-1 sm:py-3 hover:bg-opacity-100 transition-colors duration-200 cursor-default"
                                 variants={fadeInAnimationVariants}
                                 initial="initial"
                                 whileInView="animate"

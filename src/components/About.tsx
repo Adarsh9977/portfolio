@@ -18,10 +18,10 @@ export const About = () => {
         id="about"
         className="z-30 mb-20 scroll-mt-28">
             <div className="container flex items-center justify-center">
-                <div className="flex flex-col items-center justify-center bg-gray-700 rounded-full py-10 relative w-[1400px] bg-opacity-50 z-20">
+                <div className="flex flex-col items-center justify-center bg-gray-700 rounded-full py-5 sm:py-10 px-5 sm:px-10 relative md:w-[1400px] bg-opacity-50 z-20">
                     <SectionHeading>About myself</SectionHeading>
-                    <div className="bg-black/70 bg-opacity-45 max-w-[680px] text-center rounded-full p-10">
-                        <p className=" text-white/80 text-xl">
+                    <div className="bg-black/70 bg-opacity-45 max-w-[680px] text-center overflow-clip rounded-full px-10 py-12">
+                        <p className=" text-white/80 text-xs sm:text-lg md:text-xl tracking-tight">
                             Third year student pursuing Bachelor of Technology degree in{" "}
                             <span className="font-medium">Electronics & Communication Engineering</span> at
                             JEC Jabalpur. I am skilled in{" "}
