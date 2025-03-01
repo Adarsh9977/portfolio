@@ -22,20 +22,9 @@ export const About = () => {
                     <SectionHeading>About myself</SectionHeading>
                     <div className="bg-black/70 bg-opacity-45 max-w-[680px] text-center overflow-clip rounded-full px-10 py-12">
                         <p className=" text-white/80 text-xs sm:text-lg md:text-xl tracking-tight">
-                            Third year student pursuing Bachelor of Technology degree in{" "}
-                            <span className="font-medium">Electronics & Communication Engineering</span> at
-                            JEC Jabalpur. I am skilled in{" "}
-                            <span className="font-medium">
-                            full-stack web development and problem solving.
-                            </span>
-                            My tech stack is {" "}
-                            <span className="font-medium">
-                            C++, JavaScript, React, Next.js, Node.js, and MongoDB
-                            </span>
-                            . I am also familiar with postgreSQL, TypeScript and Prisma. I
-                            am always looking to learn new technologies. I am currently looking for
-                            a <span className="font-medium">full-time position/intern</span> as a software
-                            developer/engineer.
+                            Third-year B.Tech student in Electronics & Communication Engineering at JEC Jabalpur, skilled in full-stack development and problem-solving.
+                            Proficient in C++, JavaScript, TypeScript, React, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, and Prisma, with a passion for learning. Expanding expertise in DevOps with Docker, CI/CD pipelines, and Kubernetes.
+                            Seeking a full-time role or internship as a Software Developer/Engineer to apply my skills and contribute to impactful projects.
                         </p>
                     </div>
                 </div>
