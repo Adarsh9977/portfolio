@@ -14,15 +14,15 @@ export const Header = () => {
         <header className="fixed top-0 w-full backdrop-blur-sm z-[999]">
             <div className="container flex items-center justify-center py-5">
                 <nav className="flex bg-white items-center justify-center rounded-full z-30">
-                    <motion.div 
+                    <motion.div
                     className="bg-gradient-to-r from-[#fd9fa2] to-[#7d70e2]  p-0.5 rounded-full"
                     initial={{y: -100, opacity:0 }}
                     animate={{ y: 0, opacity: 1 }}
                     >
                         <ul className="flex items-center justify-evenly gap-1 md:gap-4 md:px-4 rounded-full bg-gray-700 bg-opacity-80 py-2 ">
-                            {navLinks.map((link)=> (
+                            {navLinks.map((link, index)=> (
                                 <motion.li
-                                key={link.hash}
+                                key={index}
                                 className="flex items-center justify-center relative"
                                 initial={{opacity: 0, y: -100 }}
                                 animate={{ opacity: 1, y: 0 }}
