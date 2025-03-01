@@ -1,6 +1,7 @@
 import medium from "@/public/medium.png"
 import ezchat from "@/public/Ez-chat.png"
 import landing from "@/public/landing.png"
+import coachai from "@/public/coach-ai.png"
 
 export const navLinks = [
     {
@@ -22,13 +23,23 @@ export const navLinks = [
     {
         name: "Contact",
         hash: "#contact"
+    },
+    {
+
     }
-] as const;
+];
 
 export const projectsList = [
     {
+        title: "Coach-AI",
+        description: "An AI agent that helps users create resumes, gain industry insights, and prepare for interviews with AI-generated questions based on their skills. Users can also download resumes and cover letters.",
+        tags: ["NextJs", "TailwindCSS", "PostgreSQL", "Clerk", "Prisma", "Gemini"],
+        imageUrl:coachai,
+        linkToProject: "https://www.coachai.site"
+    },
+    {
         title: "Ez-Chat",
-        description: "A Slack clone, with NextJs that allows users to create, update & deloete workspaces. And also make chat with friends and send reactions in chat. Also implement the thread feature for messages.",
+        description: "A Slack clone in Next.js where users can manage workspaces, chat with friends, send reactions, and create message threads.",
         tags: ["NextJs", "TailwindCSS", "Convex", "Shadcn", "OAuth"],
         imageUrl:ezchat,
         linkToProject: "https://ez-chat-beta.vercel.app"

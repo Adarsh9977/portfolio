@@ -21,14 +21,14 @@ export const Header = () => {
                     >
                         <ul className="flex items-center justify-evenly gap-1 md:gap-4 md:px-4 rounded-full bg-gray-700 bg-opacity-80 py-2 ">
                             {navLinks.map((link)=> (
-                                <motion.li 
+                                <motion.li
                                 key={link.hash}
                                 className="flex items-center justify-center relative"
                                 initial={{opacity: 0, y: -100 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 >
                                     <Link
-                                        href={link.hash}
+                                        href={`${link.hash}`}
                                         onClick={() => {
                                             setActiveSection(link.name)
                                             setLastClickTime(Date.now())
